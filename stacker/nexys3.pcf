@@ -1,0 +1,176 @@
+//! **************************************************************************
+// Written by: Map P.68d on Mon Dec 03 11:40:54 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "btnD" LOCATE = SITE "C9" LEVEL 1;
+COMP "btnL" LOCATE = SITE "C4" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "btnS" LOCATE = SITE "B8" LEVEL 1;
+COMP "btnU" LOCATE = SITE "A8" LEVEL 1;
+COMP "external_btn" LOCATE = SITE "P11" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vgaBlue<2>" LOCATE = SITE "T7" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "arst_ff_0" BEL "arst_ff_1" BEL "scoreClock" BEL
+        "clk_en" BEL "clk_dv_0" BEL "clk_dv_1" BEL "clk_dv_2" BEL "clk_dv_3"
+        BEL "clk_dv_4" BEL "clk_dv_5" BEL "clk_dv_6" BEL "clk_dv_7" BEL
+        "clk_dv_8" BEL "clk_dv_9" BEL "clk_dv_10" BEL "clk_dv_11" BEL
+        "clk_dv_12" BEL "clk_dv_13" BEL "clk_dv_14" BEL "clk_dv_15" BEL
+        "clk_dv_16" BEL "cnt_13" BEL "cnt_14" BEL "cnt_15" BEL "step_d_r_0"
+        BEL "step_d_r_1" BEL "step_d_r_2" BEL "step_d_d_0" BEL "step_d_d_1"
+        BEL "step_d_d_2" BEL "step_d_l_0" BEL "step_d_l_1" BEL "step_d_l_2"
+        BEL "step_d_hs_0" BEL "step_d_hs_1" BEL "step_d_hs_2" BEL "step_d_u_0"
+        BEL "step_d_u_1" BEL "step_d_u_2" BEL "prev_posedge_l" BEL
+        "prev_posedge_u" BEL "prev_posedge_r" BEL "prev_posedge_hs" BEL
+        "prev_posedge_d" BEL "btnHS_pulse" BEL "btnR_pulse" BEL "btnU_pulse"
+        BEL "btnL_pulse" BEL "btnD_pulse" BEL "scoreClockCount_0" BEL
+        "scoreClockCount_1" BEL "scoreClockCount_2" BEL "scoreClockCount_3"
+        BEL "scoreClockCount_4" BEL "scoreClockCount_5" BEL
+        "scoreClockCount_6" BEL "scoreClockCount_7" BEL "scoreClockCount_8"
+        BEL "scoreClockCount_9" BEL "scoreClockCount_10" BEL
+        "scoreClockCount_11" BEL "scoreClockCount_12" BEL "scoreClockCount_13"
+        BEL "scoreClockCount_14" BEL "scoreClockCount_15" BEL
+        "scoreClockCount_16" BEL "scoreClockCount_17" BEL "scoreClockCount_18"
+        BEL "scoreClockCount_19" BEL "scoreClockCount_20" BEL
+        "scoreClockCount_21" BEL "scoreClockCount_22" BEL "scoreClockCount_23"
+        BEL "scoreClockCount_24" BEL "scoreClockCount_25" BEL
+        "scoreClockCount_26" BEL "scoreClockCount_27" BEL "scoreClockCount_28"
+        BEL "scoreClockCount_29" BEL "scoreClockCount_30" BEL
+        "scoreClockCount_31" BEL "cd_R/count_0" BEL "cd_R/count_31" BEL
+        "cd_R/count_30" BEL "cd_R/count_29" BEL "cd_R/count_28" BEL
+        "cd_R/count_27" BEL "cd_R/count_25" BEL "cd_R/count_24" BEL
+        "cd_R/count_26" BEL "cd_R/count_23" BEL "cd_R/count_22" BEL
+        "cd_R/count_20" BEL "cd_R/count_19" BEL "cd_R/count_21" BEL
+        "cd_R/count_18" BEL "cd_R/count_17" BEL "cd_R/count_15" BEL
+        "cd_R/count_14" BEL "cd_R/count_16" BEL "cd_R/count_13" BEL
+        "cd_R/count_12" BEL "cd_R/count_11" BEL "cd_R/count_10" BEL
+        "cd_R/count_9" BEL "cd_R/count_8" BEL "cd_R/count_6" BEL
+        "cd_R/count_5" BEL "cd_R/count_7" BEL "cd_R/count_4" BEL
+        "cd_R/count_3" BEL "cd_R/count_1" BEL "cd_R/count_2" BEL
+        "cd_R/game_pulse" BEL "cd_R/prevHeight_3" BEL "cd_R/prevHeight_2" BEL
+        "cd_R/prevHeight_1" BEL "cd_R/prevHeight_0" BEL "cd_L/count_0" BEL
+        "cd_L/count_31" BEL "cd_L/count_30" BEL "cd_L/count_29" BEL
+        "cd_L/count_28" BEL "cd_L/count_27" BEL "cd_L/count_25" BEL
+        "cd_L/count_24" BEL "cd_L/count_26" BEL "cd_L/count_23" BEL
+        "cd_L/count_22" BEL "cd_L/count_20" BEL "cd_L/count_19" BEL
+        "cd_L/count_21" BEL "cd_L/count_18" BEL "cd_L/count_17" BEL
+        "cd_L/count_15" BEL "cd_L/count_14" BEL "cd_L/count_16" BEL
+        "cd_L/count_13" BEL "cd_L/count_12" BEL "cd_L/count_11" BEL
+        "cd_L/count_10" BEL "cd_L/count_9" BEL "cd_L/count_8" BEL
+        "cd_L/count_6" BEL "cd_L/count_5" BEL "cd_L/count_7" BEL
+        "cd_L/count_4" BEL "cd_L/count_3" BEL "cd_L/count_1" BEL
+        "cd_L/count_2" BEL "cd_L/game_pulse" BEL "cd_L/prevHeight_3" BEL
+        "cd_L/prevHeight_2" BEL "cd_L/prevHeight_1" BEL "cd_L/prevHeight_0"
+        BEL "gameR/block_pos_0" BEL "gameR/block_height_3" BEL
+        "gameR/block_height_2" BEL "gameR/block_height_1" BEL
+        "gameR/block_height_0" BEL "gameR/block_pos_3" BEL "gameR/block_pos_2"
+        BEL "gameR/block_pos_1" BEL "gameR/state_FSM_FFd1" BEL
+        "gameR/state_FSM_FFd2" BEL "gameR/board_89" BEL "gameR/board_88" BEL
+        "gameR/board_87" BEL "gameR/board_86" BEL "gameR/board_85" BEL
+        "gameR/board_84" BEL "gameR/board_83" BEL "gameR/board_82" BEL
+        "gameR/board_81" BEL "gameR/board_80" BEL "gameR/board_79" BEL
+        "gameR/board_78" BEL "gameR/board_77" BEL "gameR/board_76" BEL
+        "gameR/board_75" BEL "gameR/board_74" BEL "gameR/board_73" BEL
+        "gameR/board_72" BEL "gameR/board_71" BEL "gameR/board_70" BEL
+        "gameR/board_69" BEL "gameR/board_68" BEL "gameR/board_67" BEL
+        "gameR/board_66" BEL "gameR/board_65" BEL "gameR/board_64" BEL
+        "gameR/board_63" BEL "gameR/board_62" BEL "gameR/board_61" BEL
+        "gameR/board_60" BEL "gameR/board_59" BEL "gameR/board_58" BEL
+        "gameR/board_57" BEL "gameR/board_56" BEL "gameR/board_55" BEL
+        "gameR/board_54" BEL "gameR/board_53" BEL "gameR/board_52" BEL
+        "gameR/board_51" BEL "gameR/board_50" BEL "gameR/board_49" BEL
+        "gameR/board_48" BEL "gameR/board_47" BEL "gameR/board_46" BEL
+        "gameR/board_45" BEL "gameR/board_44" BEL "gameR/board_43" BEL
+        "gameR/board_42" BEL "gameR/board_41" BEL "gameR/board_40" BEL
+        "gameR/board_39" BEL "gameR/board_38" BEL "gameR/board_37" BEL
+        "gameR/board_36" BEL "gameR/board_35" BEL "gameR/board_34" BEL
+        "gameR/board_33" BEL "gameR/board_32" BEL "gameR/board_31" BEL
+        "gameR/board_30" BEL "gameR/board_29" BEL "gameR/board_28" BEL
+        "gameR/board_27" BEL "gameR/board_26" BEL "gameR/board_25" BEL
+        "gameR/board_24" BEL "gameR/board_23" BEL "gameR/board_22" BEL
+        "gameR/board_21" BEL "gameR/board_20" BEL "gameR/board_19" BEL
+        "gameR/board_18" BEL "gameR/board_17" BEL "gameR/board_16" BEL
+        "gameR/board_15" BEL "gameR/board_14" BEL "gameR/board_13" BEL
+        "gameR/board_12" BEL "gameR/board_11" BEL "gameR/board_10" BEL
+        "gameR/board_9" BEL "gameR/board_8" BEL "gameR/board_7" BEL
+        "gameR/board_6" BEL "gameR/board_5" BEL "gameR/board_4" BEL
+        "gameR/board_3" BEL "gameR/board_2" BEL "gameR/board_1" BEL
+        "gameR/board_0" BEL "gameR/tempRow_8" BEL "gameR/tempRow_7" BEL
+        "gameR/tempRow_6" BEL "gameR/tempRow_5" BEL "gameR/tempRow_4" BEL
+        "gameR/tempRow_3" BEL "gameR/tempRow_2" BEL "gameR/tempRow_1" BEL
+        "gameR/tempRow_0" BEL "gameR/block_width_1" BEL "gameR/block_width_0"
+        BEL "gameL/block_pos_0" BEL "gameL/block_height_3" BEL
+        "gameL/block_height_2" BEL "gameL/block_height_1" BEL
+        "gameL/block_height_0" BEL "gameL/block_pos_3" BEL "gameL/block_pos_2"
+        BEL "gameL/block_pos_1" BEL "gameL/state_FSM_FFd1" BEL
+        "gameL/state_FSM_FFd2" BEL "gameL/board_89" BEL "gameL/board_88" BEL
+        "gameL/board_87" BEL "gameL/board_86" BEL "gameL/board_85" BEL
+        "gameL/board_84" BEL "gameL/board_83" BEL "gameL/board_82" BEL
+        "gameL/board_81" BEL "gameL/board_80" BEL "gameL/board_79" BEL
+        "gameL/board_78" BEL "gameL/board_77" BEL "gameL/board_76" BEL
+        "gameL/board_75" BEL "gameL/board_74" BEL "gameL/board_73" BEL
+        "gameL/board_72" BEL "gameL/board_71" BEL "gameL/board_70" BEL
+        "gameL/board_69" BEL "gameL/board_68" BEL "gameL/board_67" BEL
+        "gameL/board_66" BEL "gameL/board_65" BEL "gameL/board_64" BEL
+        "gameL/board_63" BEL "gameL/board_62" BEL "gameL/board_61" BEL
+        "gameL/board_60" BEL "gameL/board_59" BEL "gameL/board_58" BEL
+        "gameL/board_57" BEL "gameL/board_56" BEL "gameL/board_55" BEL
+        "gameL/board_54" BEL "gameL/board_53" BEL "gameL/board_52" BEL
+        "gameL/board_51" BEL "gameL/board_50" BEL "gameL/board_49" BEL
+        "gameL/board_48" BEL "gameL/board_47" BEL "gameL/board_46" BEL
+        "gameL/board_45" BEL "gameL/board_44" BEL "gameL/board_43" BEL
+        "gameL/board_42" BEL "gameL/board_41" BEL "gameL/board_40" BEL
+        "gameL/board_39" BEL "gameL/board_38" BEL "gameL/board_37" BEL
+        "gameL/board_36" BEL "gameL/board_35" BEL "gameL/board_34" BEL
+        "gameL/board_33" BEL "gameL/board_32" BEL "gameL/board_31" BEL
+        "gameL/board_30" BEL "gameL/board_29" BEL "gameL/board_28" BEL
+        "gameL/board_27" BEL "gameL/board_26" BEL "gameL/board_25" BEL
+        "gameL/board_24" BEL "gameL/board_23" BEL "gameL/board_22" BEL
+        "gameL/board_21" BEL "gameL/board_20" BEL "gameL/board_19" BEL
+        "gameL/board_18" BEL "gameL/board_17" BEL "gameL/board_16" BEL
+        "gameL/board_15" BEL "gameL/board_14" BEL "gameL/board_13" BEL
+        "gameL/board_12" BEL "gameL/board_11" BEL "gameL/board_10" BEL
+        "gameL/board_9" BEL "gameL/board_8" BEL "gameL/board_7" BEL
+        "gameL/board_6" BEL "gameL/board_5" BEL "gameL/board_4" BEL
+        "gameL/board_3" BEL "gameL/board_2" BEL "gameL/board_1" BEL
+        "gameL/board_0" BEL "gameL/tempRow_8" BEL "gameL/tempRow_7" BEL
+        "gameL/tempRow_6" BEL "gameL/tempRow_5" BEL "gameL/tempRow_4" BEL
+        "gameL/tempRow_3" BEL "gameL/tempRow_2" BEL "gameL/tempRow_1" BEL
+        "gameL/tempRow_0" BEL "gameL/block_width_1" BEL "gameL/block_width_0"
+        BEL "gameR/dir" BEL "gameL/dir" BEL "gameR/block_height_2_1" BEL
+        "gameR/block_height_1_1" BEL "gameR/block_height_1_2" BEL
+        "gameR/block_height_1_3" BEL "gameL/block_height_1_1" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

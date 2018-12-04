@@ -1,0 +1,5 @@
+verilog work "../src/vga640x480.v"
+verilog work "../src/stacker.v"
+verilog work "../src/scoreDisplay.v"
+verilog work "../src/clock.v"
+verilog work "../src/nexys3.v"
